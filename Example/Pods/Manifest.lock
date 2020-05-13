@@ -1,0 +1,59 @@
+PODS:
+  - AFNetworking (2.7.0):
+    - AFNetworking/NSURLConnection (= 2.7.0)
+    - AFNetworking/NSURLSession (= 2.7.0)
+    - AFNetworking/Reachability (= 2.7.0)
+    - AFNetworking/Security (= 2.7.0)
+    - AFNetworking/Serialization (= 2.7.0)
+    - AFNetworking/UIKit (= 2.7.0)
+  - AFNetworking/NSURLConnection (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.7.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.7.0)
+  - AFNetworking/Security (2.7.0)
+  - AFNetworking/Serialization (2.7.0)
+  - AFNetworking/UIKit (2.7.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - SFCommonKit (0.1.1):
+    - AFNetworking (~> 2.3)
+  - SFUserModule (0.1.0):
+    - AFNetworking (~> 2.3)
+    - SFCommonKit
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - SFCommonKit
+  - SFUserModule (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+  https://github.com/samstring/SFRepoCenter.git:
+    - SFCommonKit
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  SFUserModule:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  SFCommonKit: b4a122a1a0064998e1f8c91e3a05aed3f9bd3a00
+  SFUserModule: dd7fbac029991f6aa07196cc1f566c1479ae9b53
+
+PODFILE CHECKSUM: 89e7b2db62d470059e372597ca045f0376150d8e
+
+COCOAPODS: 1.8.4

@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '8.0'
+source'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/samstring/SFRepoCenter.git'
+target 'SFUserModule_Example' do
+  pod 'SFUserModule', :path => '../'
+  pod 'SFCommonKit'
+  target 'SFUserModule_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

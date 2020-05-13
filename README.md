@@ -1,1 +1,29 @@
 # SFUserModule
+
+[![CI Status](https://img.shields.io/travis/samstring/SFUserModule.svg?style=flat)](https://travis-ci.org/samstring/SFUserModule)
+[![Version](https://img.shields.io/cocoapods/v/SFUserModule.svg?style=flat)](https://cocoapods.org/pods/SFUserModule)
+[![License](https://img.shields.io/cocoapods/l/SFUserModule.svg?style=flat)](https://cocoapods.org/pods/SFUserModule)
+[![Platform](https://img.shields.io/cocoapods/p/SFUserModule.svg?style=flat)](https://cocoapods.org/pods/SFUserModule)
+
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Requirements
+
+## Installation
+
+SFUserModule is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'SFUserModule'
+```
+
+## Author
+
+samstring, 1264986115@qq.com
+
+## License
+
+SFUserModule is available under the MIT license. See the LICENSE file for more info.
