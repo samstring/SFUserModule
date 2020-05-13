@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SFUserModule'
-  s.version          = '0.1.2'
+  s.version          = '0.1.0'
   s.summary          = 'A short description of SFUserModule.'
 
 # This description is used to generate tags and improve search results.
@@ -40,5 +40,4 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
    s.frameworks = 'UIKit'
    s.dependency 'AFNetworking', '~> 2.3'
-   s.dependency 'SFCommonKit'
 end
