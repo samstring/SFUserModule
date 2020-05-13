@@ -8,7 +8,6 @@
 
 #import "SFUserInfoViewController.h"
 #import "SFUserInfo.h"
-#import ""
 @interface SFUserInfoViewController ()
 
 @end
@@ -19,10 +18,7 @@
     
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-}
+
 - (IBAction)logUserName:(id)sender {
     NSLog(@"%@",[SFUserInfo getUserName]);
 }
