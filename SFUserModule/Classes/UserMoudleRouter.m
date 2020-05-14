@@ -7,8 +7,8 @@
 
 #import "UserMoudleRouter.h"
 #import "SFUserInfoViewController.h"
-
-@import SFCommonKit;
+#import <SFCommonKit/MGJRouter.h>
+//@import SFCommonKit;
 @implementation UserMoudleRouter
 +(void)load{
     [MGJRouter registerURLPattern:@"sf_user://SFUserInfoViewController" toHandler:^(NSDictionary *routerParameters) {
