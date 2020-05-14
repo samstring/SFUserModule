@@ -27,7 +27,7 @@ PODS:
     - FBSnapshotTestCase/Core
   - SFCommonKit (0.1.1):
     - AFNetworking (~> 2.3)
-  - SFUserModule (0.1.2):
+  - SFUserModule (0.1.3):
     - AFNetworking (~> 2.3)
     - SFCommonKit
 
@@ -52,7 +52,7 @@ SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   SFCommonKit: b4a122a1a0064998e1f8c91e3a05aed3f9bd3a00
-  SFUserModule: 610e43e62abf31256149e65636ccd847bb0f7fb1
+  SFUserModule: 25ff69fac4f3e5fb09dda4bb5b90113815719c6a
 
 PODFILE CHECKSUM: 89e7b2db62d470059e372597ca045f0376150d8e
 

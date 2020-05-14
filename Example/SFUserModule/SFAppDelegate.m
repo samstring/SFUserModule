@@ -7,7 +7,7 @@
 //
 
 #import "SFAppDelegate.h"
-
+#import <MGJRouter.h>
 @implementation SFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions

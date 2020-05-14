@@ -12,6 +12,7 @@
 
 #import "SFUserInfo.h"
 #import "SFUserInfoViewController.h"
+#import "UserMoudleRouter.h"
 
 FOUNDATION_EXPORT double SFUserModuleVersionNumber;
 FOUNDATION_EXPORT const unsigned char SFUserModuleVersionString[];

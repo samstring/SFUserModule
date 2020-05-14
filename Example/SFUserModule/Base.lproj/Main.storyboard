@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3Nx-xM-YKv">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -26,6 +24,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="KOA-qy-Zgj">
+            <objects>
+                <navigationController id="3Nx-xM-YKv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rjw-4q-k0H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7sC-87-qhi" kind="relationship" relationship="rootViewController" id="N5K-32-jR7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDD-hk-ovh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1105" y="-144"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="23Z-KD-Vsp">
+            <objects>
+                <viewController id="7sC-87-qhi" customClass="SFViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jm2-uM-uSp"/>
+                        <viewControllerLayoutGuide type="bottom" id="CO6-v2-2WT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OCY-87-dTe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wud-Ss-xRk">
+                                <rect key="frame" x="75" y="256" width="225" height="155"/>
+                                <color key="backgroundColor" white="0.2230190618" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="跳转页面"/>
+                                <connections>
+                                    <action selector="clickJumpVC:" destination="7sC-87-qhi" eventType="touchUpInside" id="do7-8O-36q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wud-Ss-xRk" firstAttribute="centerX" secondItem="OCY-87-dTe" secondAttribute="centerX" id="KWh-O8-BNK"/>
+                            <constraint firstItem="Wud-Ss-xRk" firstAttribute="top" secondItem="Jm2-uM-uSp" secondAttribute="bottom" constant="212" id="YJD-3n-yBP"/>
+                            <constraint firstItem="Wud-Ss-xRk" firstAttribute="leading" secondItem="OCY-87-dTe" secondAttribute="leadingMargin" constant="59" id="fbe-t4-yNa"/>
+                            <constraint firstItem="Wud-Ss-xRk" firstAttribute="centerY" secondItem="OCY-87-dTe" secondAttribute="centerY" id="gfn-uI-pi5"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jYa-kO-A8u"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EcM-ZO-Uux" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26" y="-97"/>
         </scene>
     </scenes>
 </document>

@@ -8,14 +8,18 @@
 
 #import "SFUserInfoViewController.h"
 #import "SFUserInfo.h"
+//#import <MGJRouter.h>
+
 @interface SFUserInfoViewController ()
 
 @end
 
 @implementation SFUserInfoViewController
 
-+(void)load{
-    
+
+-(void)viewDidLoad{
+    NSLog(@"加载SFUserInfoViewController");
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 
