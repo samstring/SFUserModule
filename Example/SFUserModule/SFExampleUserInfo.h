@@ -1,8 +1,8 @@
 //
-//  SFUserInfo.h
+//  SFExampleUserInfo.h
 //  SFUserModule_Example
 //
-//  Created by 邓尚福 on 2020/5/14.
+//  Created by 邓尚福 on 2020/5/26.
 //  Copyright © 2020 samstring. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SFUserInfo : NSObject
+@interface SFExampleUserInfo : NSObject
 @property (nonatomic, strong) NSString *userName;
 @property (nonatomic, assign) int age;
 @end

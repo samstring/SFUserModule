@@ -8,10 +8,12 @@
 
 #import "SFUserInfoViewController.h"
 #import "SFUserInfo.h"
+#import "SFUserViewModel.h"
 //#import <MGJRouter.h>
 
 @interface SFUserInfoViewController ()
 
+@property (nonatomic, strong) SFUserViewModel *viewModel;
 @end
 
 @implementation SFUserInfoViewController
@@ -20,11 +22,22 @@
 -(void)viewDidLoad{
     NSLog(@"加载SFUserInfoViewController");
     self.view.backgroundColor = [UIColor whiteColor];
+    self.viewModel = [SFUserViewModel new];
+    [self.viewModel initWtihVC:self];
+}
+
+- (IBAction)changeUserName:(id)sender {
+    [self.viewModel changeUserName];
 }
 
 
-- (IBAction)logUserName:(id)sender {
-    NSLog(@"%@",[SFUserInfo getUserName]);
+- (IBAction)back:(id)sender {
+    SFUserInfo *userInfo = [SFUserInfo new];
+    userInfo.userName = [self.viewModel getUserInfo].userName;
+    if (self.userBLock) {
+        self.userBLock(userInfo);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

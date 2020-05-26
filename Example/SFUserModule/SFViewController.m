@@ -7,7 +7,9 @@
 //
 
 #import "SFViewController.h"
+#import "SFExampleUserInfo.h"
 #import <MGJRouter.h>
+typedef void(^UserModuleExample_UserBLock)(SFExampleUserInfo *userInfo);
 @interface SFViewController ()
 
 @end
@@ -27,7 +29,13 @@
 }
 - (IBAction)clickJumpVC:(id)sender {
     NSMutableDictionary *userInfo = [NSMutableDictionary dictionary];
-    [userInfo setObject:self.navigationController forKey:@"nav"];
+    [userInfo setObject:self forKey:@"vc"];
+    
+    UserModuleExample_UserBLock block = ^(SFExampleUserInfo *userInfo){
+        NSLog(@"demo获取用户名-%@",userInfo.userName);
+    };
+    [userInfo  setObject:block forKey:@"block"];
+    
     [MGJRouter openURL:@"sf_user://SFUserInfoViewController" withUserInfo:userInfo completion:^(id result) {
         
     }];

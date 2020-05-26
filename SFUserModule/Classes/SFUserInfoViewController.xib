@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SFUserInfoViewController">
             <connections>
+                <outlet property="nameLabel" destination="BJ1-Wd-WjV" id="UvL-nD-XaU"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,22 +19,43 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-C9-jH2">
-                    <rect key="frame" x="161" y="433" width="92" height="30"/>
-                    <color key="backgroundColor" red="0.95294117649999999" green="0.23137254900000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="获取用户名称"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJ1-Wd-WjV">
+                    <rect key="frame" x="172.5" y="385" width="69.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGR-up-yAS">
+                    <rect key="frame" x="122" y="621" width="170" height="84"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="关闭页面并执行block返回用户信息" image="clear.fill" catalog="system">
+                        <color key="titleColor" red="0.047058823530000002" green="0.67450980390000004" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
-                        <action selector="logUserName:" destination="-1" eventType="touchUpInside" id="35z-Kk-1zd"/>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="CKc-1n-EGg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRF-R4-dO3">
+                    <rect key="frame" x="162" y="459" width="77" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.047058823530000002" green="0.67450980390000004" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="更改用户名"/>
+                    <connections>
+                        <action selector="changeUserName:" destination="-1" eventType="touchUpInside" id="Fft-kr-Pob"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Mh3-C9-jH2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Mag-H9-Nwc"/>
-                <constraint firstItem="Mh3-C9-jH2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OVc-k2-Wg4"/>
+                <constraint firstItem="BJ1-Wd-WjV" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="341" id="3sE-2O-J4w"/>
+                <constraint firstItem="BJ1-Wd-WjV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DiQ-gn-3TS"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
-            <point key="canvasLocation" x="133" y="154"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
         </view>
     </objects>
+    <resources>
+        <image name="clear.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>

@@ -8,13 +8,17 @@
 #import "UserMoudleRouter.h"
 #import "SFUserInfoViewController.h"
 #import <SFCommonKit/MGJRouter.h>
+#import "UserService.h"
+
 //@import SFCommonKit;
 @implementation UserMoudleRouter
 +(void)load{
+    
     [MGJRouter registerURLPattern:@"sf_user://SFUserInfoViewController" toHandler:^(NSDictionary *routerParameters) {
-          UINavigationController *nav = [routerParameters[MGJRouterParameterUserInfo] objectForKey:@"nav"];
-          [nav pushViewController:[[SFUserInfoViewController alloc] initWithNibName:@"SFUserInfoViewController" bundle:[NSBundle bundleForClass:NSClassFromString(@"SFUserInfoViewController")]] animated:YES];
+        NSDictionary *userInfo = [routerParameters objectForKey:MGJRouterParameterUserInfo];
+        [UserService gotoUserInfoWithController:[userInfo objectForKey:@"vc"] withBLock:[userInfo objectForKey:@"block"]];
       }];
-      NSLog(@"");
+    
+    NSLog(@"");
 }
 @end

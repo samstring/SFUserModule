@@ -25,24 +25,25 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - SFCommonKit (0.1.1):
+  - KVOController (1.2.0)
+  - SFCommonKit (0.1.6):
     - AFNetworking (~> 2.3)
-  - SFUserModule (0.1.4):
+    - KVOController
+  - SFUserModule (0.1.6):
     - AFNetworking (~> 2.3)
-    - SFCommonKit
+    - SFCommonKit (= 0.1.6)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
-  - SFCommonKit
   - SFUserModule (from `../`)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
+    - FBSnapshotTestCase
+    - KVOController
   https://github.com/samstring/SFRepoCenter.git:
     - SFCommonKit
-  trunk:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SFUserModule:
@@ -51,9 +52,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: 8dd5f9b9691e09186393069a12cc3b5ed7c8b511
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SFCommonKit: b4a122a1a0064998e1f8c91e3a05aed3f9bd3a00
-  SFUserModule: 3b3a1a395ca0a6e2dd11f6bcaf8a8f19f20e30c1
+  KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
+  SFCommonKit: 9712e044d1cff6a1b2999c2734e40e1220ac3303
+  SFUserModule: 17ab15fea8a1f3955647203cdd6ebb8065f3f426
 
-PODFILE CHECKSUM: 89e7b2db62d470059e372597ca045f0376150d8e
+PODFILE CHECKSUM: 15e8afd0676d45c32ece6412cada5840e7b1ce47
 
 COCOAPODS: 1.8.4
